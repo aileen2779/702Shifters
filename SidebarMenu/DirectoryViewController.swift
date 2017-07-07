@@ -9,8 +9,7 @@ import UIKit
 import AVFoundation
 
 
-class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
-    
+class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {    
 
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -29,7 +28,6 @@ class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICol
         
         // turn on activity indicator
         activityIndicatorStart()
-        
         
         collection.dataSource = self
         collection.delegate = self
