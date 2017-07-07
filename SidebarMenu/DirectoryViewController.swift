@@ -11,8 +11,7 @@ import AVFoundation
 
 class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
-    @IBOutlet weak var menuButton:UIBarButtonItem!
-    @IBOutlet weak var extraButton: UIBarButtonItem!
+
     
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -28,13 +27,10 @@ class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        revealView()
         
         // turn on activity indicator
         activityIndicatorStart()
         
-        
-
         
         collection.dataSource = self
         collection.delegate = self
@@ -239,24 +235,6 @@ class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICol
             }
         }
     
-    
-    
-    func revealView() {
-        if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = 230
-            menuButton.target = revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            
-            revealViewController().rightViewRevealWidth = 150
-            extraButton.target = revealViewController()
-            extraButton.action = #selector(SWRevealViewController.rightRevealToggle(_:))
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            
-        }
-        
-    }
     
     func activityIndicatorStart() {
         var activityIndicator = UIActivityIndicatorView()
