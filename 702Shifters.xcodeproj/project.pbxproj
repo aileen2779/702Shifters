@@ -21,7 +21,6 @@
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
 		F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */; };
-		F4702A0C1A7F27DC00E30A3C /* SidebarMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */; };
 		F491E74A1A7F4B300026528E /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491E7491A7F4B300026528E /* DirectoryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		F47029FC1A7F27DB00E30A3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F47029FF1A7F27DB00E30A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4702A051A7F27DC00E30A3C /* 702ShiftersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 702ShiftersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4702A0A1A7F27DC00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuTests.swift; sourceTree = "<group>"; };
 		F491E7491A7F4B300026528E /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				F47029F21A7F27DB00E30A3C /* 702Shifters */,
-				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
 				F47029F11A7F27DB00E30A3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,23 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				F47029F41A7F27DB00E30A3C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F4702A081A7F27DC00E30A3C /* SidebarMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				F4702A0B1A7F27DC00E30A3C /* SidebarMenuTests.swift */,
-				F4702A091A7F27DC00E30A3C /* Supporting Files */,
-			);
-			path = SidebarMenuTests;
-			sourceTree = "<group>";
-		};
-		F4702A091A7F27DC00E30A3C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F4702A0A1A7F27DC00E30A3C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -325,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4702A0C1A7F27DC00E30A3C /* SidebarMenuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
